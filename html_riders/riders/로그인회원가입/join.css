@@ -54,7 +54,7 @@ main {
 }
 
 .input_box {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 input {
@@ -119,6 +119,16 @@ input[type="checkbox"] + label span {
     color: #222624;
     font-weight: 500;
     font-size: 14px;
+}
+
+#email_result,
+#pwCheck_result {
+    margin-top: 10px;
+}
+
+#pw_result {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .check {

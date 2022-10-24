@@ -29,16 +29,29 @@
             <form name="form" action="">
                 <div class="input_email_area input_box">
                     <div class="input_title">이메일</div>
-                    <input type="text" placeholder="이메일" />
+                    <input
+                        type="text"
+                        name="email"
+                        placeholder="이메일"
+                        autocomplete="off"
+                    />
+                    <div id="email_result"></div>
                 </div>
                 <div class="input_pw_area input_box">
                     <div class="input_title">비밀번호</div>
-                    <input type="password" placeholder="비밀번호" />
                     <input
                         type="password"
-                        placeholder="비밀번호 확인"
-                        class="input_bottom"
+                        name="password"
+                        placeholder="비밀번호"
                     />
+                    <div id="pw_result"></div>
+                    <input
+                        type="password"
+                        name="passwordCheck"
+                        placeholder="비밀번호 확인"
+                        class="pwCheck_bottom"
+                    />
+                    <div id="pwCheck_result"></div>
                 </div>
                 <div class="input_delivery_area input_box">
                     <div class="input_title">배달지역 (서울특별시)</div>
@@ -125,5 +138,7 @@
                 </a>
             </form>
         </main>
+
+        <script type="text/javascript" src="join.js"></script>
     </body>
 </html>
