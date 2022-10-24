@@ -1,0 +1,75 @@
+@charset 'utf-8';
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+body {
+  font-family: "Black Han Sans", sans-serif;
+  background-color: #1f2029;
+  color: white;
+  height: 500px;
+}
+div.logo {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 8em;
+  margin: 20px;
+}
+div.admin_login_welocome {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+fieldset {
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 8px;
+  width: 800px;
+}
+legend {
+  width: 15%;
+  height: 15%;
+}
+.input_wrapper {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+}
+.text_wrapper {
+  margin: 0 auto;
+}
+/* img {
+  background-color: rgba(0, 0, 0, 0, 75);
+} */
+div.text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.3em;
+}
+.user_input {
+  margin-bottom: 10px;
+  display: block;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  background-color: black;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: azure;
+  font-size: 1.3em;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  cursor: pointer;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 1.5em;
+  padding: 10px;
+}
