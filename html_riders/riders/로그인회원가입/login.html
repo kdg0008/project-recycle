@@ -27,15 +27,15 @@
         </header>
         <main>
             <!--input-->
-            <div class="input_area">
-                <input type="text" name="id" placeholder="이메일" />
+            <form class="input_area" name="form">
+                <input type="text" name="email" placeholder="이메일" />
                 <input
                     type="password"
                     name="pw"
                     placeholder="비밀번호 8자 이상"
                     id="input_pw"
                 />
-            </div>
+            </form>
             <!--이메일저장 & 비밀번호 재설정-->
             <div class="login_option_area">
                 <div class="remember_id">
@@ -48,7 +48,9 @@
             </div>
             <!--로그인버튼-->
             <a href="">
-                <button class="login_button">로그인</button>
+                <button class="login_button" onclick="loginCheck()">
+                    로그인
+                </button>
             </a>
             <!--회원가입 안내-->
             <div class="inform_join_area">
@@ -59,4 +61,6 @@
             </div>
         </main>
     </body>
+
+    <script type="text/javascript" src="login.js"></script>
 </html>
