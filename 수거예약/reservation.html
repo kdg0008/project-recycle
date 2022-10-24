@@ -71,10 +71,10 @@
             </h1>
             <div class="inner">
                 <div class="holder">
+                    <button type="button" class="btn_n nav">
+                        <span class="menu c">메뉴</span>
+                    </button>
                     <ul>
-                    <li class="menu">
-                        <img src="imgs/menu.png">
-                    </li>
                     <li class="active">
                         <a href="">홈</a>
                     </li>
@@ -85,22 +85,19 @@
                         <a href="">커뮤니티</a>
                     </li>
                     <li class="active">
-                        <a href="">싱그런 여행</a>
+                        <a href="">공지사항</a>
                     </li>
                     </ul>
                     <a href="" class="btn_t write">
                     <span class="c write">
-                        <img src="imgs/review.png">
                         글쓰기</span>
                     </a>
                     <a href="" class="btn_t cart">
                     <span class="c cart">
-                        <img src="imgs/cart.png">
                         장바구니</span>
                     </a>
                     <a href="" class="btn_t my">
                     <span class="c my">
-                        <img src="imgs/mypage.png">
                         마이페이지</span>
                     </a>
                     <div class="search">
@@ -108,7 +105,7 @@
                         <input type="text" id="Search" name="find" placeholder="싱그러움을 검색하세요." autocomplete="off">
                         <button type="submit" class="btn_search">
                             <span class="btn_search_icon">
-                                <img src="imgs/search.png">
+                                <!-- <img src="imgs/search.png"> -->
                             </span>
                         </button>
                     </form>
@@ -117,6 +114,7 @@
             </div>
         </article>
     </header>
+
     <article class="request">
         <div class="holder">
             <h3 class="subtit">예약하기
@@ -184,9 +182,17 @@
                             <td colspan="3">
                                 <div class="addr">
                                     <div class="addr_detail">
-                                        <span>주소 입력</span>
+                                        <span>지역 선택</span>
                                         <div class="input">
-                                            <input type="text" id="addr1" name="address" title="주소입력">
+                                            <div class="adr_sel">
+                                            <select name="choice_adr" title="지역 선택">
+                                                <option value="강남구">강남구</option>
+                                                <option value="강동구">강동구</option>
+                                                <option value="송파구">송파구</option>
+                                                <option value="광진구">광진구</option>
+                                                <option value="성동구">성동구</option>
+                                            </select>
+                                            </div>
                                         </div>
                                         <span>상세주소 입력</span>
                                         <div class="input">
@@ -203,12 +209,12 @@
                             <td colspan="3">
                                 <div class="date">
                                     <div class="date_input">
-                                        <div class="input_date">
-                                            <input type="text" name="reserve_date" title="날짜 선택" id="show_date">
+                                        <label for="input_date">
+                                            <input type="date" name="data" title="날짜 선택" min="2022-01-01" max="2222-12-31" value>
                                             <button type="button" class="input_date">
                                                 <span class="input_date"></span>
                                             </button>
-                                        </div>
+                                        </label>
                                     </div>
                                 </div>
                                 <span class="noti">예약 접수량이 많을 경우, 방문일정이 지연될 수 있습니다.</span>
@@ -226,7 +232,7 @@
                     </tbody>
                 </table>
                 <div class="btn_box">
-                    <button type="button">취소하기</button>
+                    <button type="button cancel_btn" onclick="alert('예약을 취소하였습니다.')">취소하기</button>
                     <button type="button" class="btn">접수하기</button>
                 </div>
             </fieldset>
@@ -281,7 +287,7 @@
                     </li>
                     <li>
                         <a href="">
-                            사업자구매회원신청
+                            관리자페이지이동
                             <span class="arrow"></span>
                         </a>
                     </li>
@@ -303,7 +309,7 @@
                 </p>
             </div>
         </div>
-    </footer>
-            
+    </footer>   
 </body>
+<script src="reservation.js"></script>        
 </html>
