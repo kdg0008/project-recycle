@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: newFont;
-  src: url("/font/NaverNanumSquareNeo/TTF/NanumSquareNeo-dEb.ttf");
+  src: url("NaverNanumSquareNeo/TTF/NanumSquareNeo-dEb.ttf");
 }
 @import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic-eco.css");
 /* body {
@@ -192,6 +192,7 @@ div.main_num3 {
   height: 50px;
   margin-left: 20px;
   margin-top: 20px;
+  font-size: 0.7em;
 }
 .review_img {
   width: 18%;
