@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="body">
+        <section>
+            <div class="space"></div>
+            <p class="home">
+                <img src="house.png" width="209px" height="50px">
+            </p>
+            <div class="main">
+                <from name="form" method="post">
+                    <div class="login">
+                        <div class="id">
+                            <label>
+                                <input type="email" name="email_id" value class="email_id" placeholder="이메일">
+                            </label>
+                        </div>
+                        <div class="password">
+                            <label>
+                                <input type="password" name="pw" class="pw" placeholder="비밀번호 8자 이상">
+                            </label>
+                        </div>
+                        <button type="submit" class="login_btn">로그인</button>
+                        <div class="under_login">
+                            <div id="div">
+                                <label class="save_email">
+                                    <input type="checkbox" name="save_id" class="save_id" value="y">
+                                    <span class="em">이메일 저장</span>
+                                </label>
+                            </div>
+                            <div style="display: inline-block;" class="link_fr">
+                                <a href="https://www.shouse.garden/member/53005_join_pw.html">비밀번호 재설정</a>
+                                <a href="join.html">회원가입</a>
+                            </div>
+                        </div>
+                        <dl class="easy_login">
+                            <dd>
+                                <button type="button" class="kakao">
+                                    <span class="kakao_login">
+                                    
+                                    카카오톡으로 로그인
+                                    </span>
+                                </button>
+                            </dd>
+                        </dl>
+                    </div>
+                </from>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
