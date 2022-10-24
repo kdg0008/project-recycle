@@ -18,6 +18,12 @@ button {
     cursor: pointer;
     border: 0;
 }
+.top_home span.logo {
+    width: 160px;
+    height: 31px;
+    background-image: url(https://www.shouse.garden/images/common/sp_common.png);
+    display: inline-block;
+}
 
 #header.util {
     line-height: 40px;
@@ -206,11 +212,19 @@ div.search button.btn_search {
 #container {
     position: relative;
     padding-top: 30px;
+    width: 83vw;
+    overflow: hidden;
+    margin: 0 auto;
 }
 div.banner {
     margin-bottom: 77px;
+    width: 498vw;
 }
-
+div.banner div {
+    width: 83vw;
+    float: left;
+    margin-bottom: 40px;
+}
 
 /* category */
 .category li {
@@ -438,7 +452,3 @@ span.arrow {
 .fnav li {
     margin-left: 28px;
 }
-
-
-
-
