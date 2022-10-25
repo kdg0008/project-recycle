@@ -37,7 +37,7 @@ pwInput.addEventListener("blur", function () {
         pwDiv.style.color = "red";
         pwDiv.style.fontSize = "14px";
     } else {
-        pwiv.innerHTML = "";
+        pwDiv.innerHTML = "";
     }
 });
 
